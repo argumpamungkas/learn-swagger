@@ -1,0 +1,124 @@
+basePath: /
+definitions:
+  models.Car:
+    properties:
+      brand:
+        type: string
+      car_id:
+        type: integer
+      model:
+        type: string
+      price:
+        type: integer
+    type: object
+host: localhost:9000
+info:
+  contact: {}
+  description: This is a sample service for managing cars
+  title: Car API
+paths:
+  /cars:
+    get:
+      consumes:
+      - application/json
+      description: Get details of all car
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Get All cars
+      tags:
+      - Get Cars
+    post:
+      consumes:
+      - application/json
+      description: 'Post create a new car, NOTE : id auto increment, so in body car_id
+        is deleted'
+      parameters:
+      - description: create car
+        in: body
+        name: models.Car
+        required: true
+        schema:
+          $ref: '#/definitions/models.Car'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Post create car
+      tags:
+      - Create Cars
+  /cars/{carID}:
+    delete:
+      consumes:
+      - application/json
+      description: Deleted data car
+      parameters:
+      - description: car_id of the car to be deleted
+        in: path
+        name: carID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Deleted car data with car_id
+      tags:
+      - Deleted Cars
+    get:
+      consumes:
+      - application/json
+      description: Get details of car corresponding to the input car_id
+      parameters:
+      - description: ID of the car
+        in: path
+        name: carID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Get details for a given car_id
+      tags:
+      - Get Cars
+    put:
+      consumes:
+      - application/json
+      description: Update data car
+      parameters:
+      - description: car_id of the car to be updated
+        in: path
+        name: carID
+        required: true
+        type: integer
+      - description: updated car
+        in: body
+        name: models.Car
+        required: true
+        schema:
+          $ref: '#/definitions/models.Car'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Updated car data with car_id
+      tags:
+      - Update Cars
+swagger: "2.0"
