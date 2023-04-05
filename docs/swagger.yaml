@@ -58,7 +58,7 @@ paths:
     delete:
       consumes:
       - application/json
-      description: Deleted data car
+      description: Delete data car
       parameters:
       - description: car_id of the car to be deleted
         in: path
@@ -72,9 +72,9 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/models.Car'
-      summary: Deleted car data with car_id
+      summary: Delete car data with car_id
       tags:
-      - Deleted Car
+      - Delete Car
     get:
       consumes:
       - application/json

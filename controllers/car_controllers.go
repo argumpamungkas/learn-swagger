@@ -165,9 +165,9 @@ func UpdateCar(ctx *gin.Context) {
 }
 
 // DeleteCar godoc
-// @Summary Deleted car data with car_id
-// @Description Deleted data car
-// @Tags Deleted Car
+// @Summary Delete car data with car_id
+// @Description Delete data car
+// @Tags Delete Car
 // @Accept json
 // @Produce json
 // @Param carID path integer true "car_id of the car to be deleted"

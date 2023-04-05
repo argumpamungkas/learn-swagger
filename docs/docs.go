@@ -142,7 +142,7 @@ const docTemplate = `{
                 }
             },
             "delete": {
-                "description": "Deleted data car",
+                "description": "Delete data car",
                 "consumes": [
                     "application/json"
                 ],
@@ -150,9 +150,9 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Deleted Car"
+                    "Delete Car"
                 ],
-                "summary": "Deleted car data with car_id",
+                "summary": "Delete car data with car_id",
                 "parameters": [
                     {
                         "type": "integer",
