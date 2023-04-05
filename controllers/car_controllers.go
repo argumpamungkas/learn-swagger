@@ -14,7 +14,7 @@ import (
 // CreateCars godoc
 // @Summary Post create car
 // @Description Post create a new car, NOTE : id auto increment, so in body car_id is deleted
-// @Tags Create Cars
+// @Tags Create Car
 // @Accept json
 // @Produce application/json
 // @Param models.Car body models.Car true "create car"
@@ -59,7 +59,7 @@ func CreateCar(ctx *gin.Context) {
 // GetAllCars godoc
 // @Summary Get All cars
 // @Description Get details of all car
-// @Tags Get Cars
+// @Tags Get Car
 // @Accept json
 // @Produce application/json
 // @Success 200 {object} models.Car
@@ -82,7 +82,7 @@ func GetAllCars(ctx *gin.Context) {
 // GetCarbyID godoc
 // @Summary Get details for a given car_id
 // @Description Get details of car corresponding to the input car_id
-// @Tags Get Cars
+// @Tags Get Car
 // @Accept json
 // @Produce application/json
 // @Param carID path integer true "ID of the car"
@@ -112,7 +112,7 @@ func GetCarsById(ctx *gin.Context) {
 // UpdateCar godoc
 // @Summary Updated car data with car_id
 // @Description Update data car
-// @Tags Update Cars
+// @Tags Update Car
 // @Accept json
 // @Produce json
 // @Param carID path integer true "car_id of the car to be updated"
@@ -167,7 +167,7 @@ func UpdateCar(ctx *gin.Context) {
 // DeleteCar godoc
 // @Summary Deleted car data with car_id
 // @Description Deleted data car
-// @Tags Deleted Cars
+// @Tags Deleted Car
 // @Accept json
 // @Produce json
 // @Param carID path integer true "car_id of the car to be deleted"
