@@ -26,7 +26,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Get Cars"
+                    "Get Car"
                 ],
                 "summary": "Get All cars",
                 "responses": {
@@ -47,7 +47,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Create Cars"
+                    "Create Car"
                 ],
                 "summary": "Post create car",
                 "parameters": [
@@ -81,7 +81,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Get Cars"
+                    "Get Car"
                 ],
                 "summary": "Get details for a given car_id",
                 "parameters": [
@@ -111,7 +111,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Update Cars"
+                    "Update Car"
                 ],
                 "summary": "Updated car data with car_id",
                 "parameters": [
@@ -150,7 +150,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "Deleted Cars"
+                    "Deleted Car"
                 ],
                 "summary": "Deleted car data with car_id",
                 "parameters": [

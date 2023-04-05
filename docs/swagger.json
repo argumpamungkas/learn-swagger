@@ -18,7 +18,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Get Cars"
+                    "Get Car"
                 ],
                 "summary": "Get All cars",
                 "responses": {
@@ -39,7 +39,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Create Cars"
+                    "Create Car"
                 ],
                 "summary": "Post create car",
                 "parameters": [
@@ -73,7 +73,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Get Cars"
+                    "Get Car"
                 ],
                 "summary": "Get details for a given car_id",
                 "parameters": [
@@ -103,7 +103,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Update Cars"
+                    "Update Car"
                 ],
                 "summary": "Updated car data with car_id",
                 "parameters": [
@@ -142,7 +142,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Deleted Cars"
+                    "Deleted Car"
                 ],
                 "summary": "Deleted car data with car_id",
                 "parameters": [

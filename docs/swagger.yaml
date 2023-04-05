@@ -31,7 +31,7 @@ paths:
             $ref: '#/definitions/models.Car'
       summary: Get All cars
       tags:
-      - Get Cars
+      - Get Car
     post:
       consumes:
       - application/json
@@ -53,7 +53,7 @@ paths:
             $ref: '#/definitions/models.Car'
       summary: Post create car
       tags:
-      - Create Cars
+      - Create Car
   /cars/{carID}:
     delete:
       consumes:
@@ -74,7 +74,7 @@ paths:
             $ref: '#/definitions/models.Car'
       summary: Deleted car data with car_id
       tags:
-      - Deleted Cars
+      - Deleted Car
     get:
       consumes:
       - application/json
@@ -94,7 +94,7 @@ paths:
             $ref: '#/definitions/models.Car'
       summary: Get details for a given car_id
       tags:
-      - Get Cars
+      - Get Car
     put:
       consumes:
       - application/json
@@ -120,5 +120,5 @@ paths:
             $ref: '#/definitions/models.Car'
       summary: Updated car data with car_id
       tags:
-      - Update Cars
+      - Update Car
 swagger: "2.0"
